@@ -1,0 +1,4 @@
+node_modules/
+stuff_folder/
+.env
+app_old.js
