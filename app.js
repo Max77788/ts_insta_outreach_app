@@ -189,7 +189,8 @@ async function searchProfiles(query, limit = 5) {
 
 async function sendDmToUser(userId, text) {
   const thread = ig.entity.directThread([userId.toString()]);
-  await sleep(rand(1200, 3000));
+    await sleep(rand(1200, 3000));
+    console.log("[IG] Sending DM to", userId);
   return thread.broadcastText(text);
 }
 
